@@ -8,11 +8,19 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.wielkiquizwiedzy.databinding.FragmentScoreBinding
 
 class ScoreFragment : Fragment() {
 
+    private lateinit var binding: FragmentScoreBinding
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+
+        binding = FragmentScoreBinding.inflate(inflater, container, false)
+
+
+        val rvScore = binding.rvScore
 
         var scoreList = mutableListOf(
             Score("1","222"),
@@ -22,11 +30,8 @@ class ScoreFragment : Fragment() {
             Score("5","100"),
         )
 
-        val adapter = ScoreAdapter(scoreList)
-        val rvScore = view?.findViewById<RecyclerView>(R.id.rvScore)
-
-        rvScore?.adapter = adapter
-        rvScore?.layoutManager = LinearLayoutManager(this.context)
+        rvScore.adapter = ScoreAdapter(scoreList)
+        rvScore.layoutManager = LinearLayoutManager(this.context)
 
         return inflater.inflate(R.layout.fragment_score, container, false)
     }

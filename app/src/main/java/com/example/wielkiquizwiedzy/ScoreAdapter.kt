@@ -5,22 +5,25 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.wielkiquizwiedzy.databinding.RowBinding
 
 class ScoreAdapter(
     var scores: List<Score>
 ): RecyclerView.Adapter<ScoreAdapter.ScoreViewHolder>() {
 
-    inner class ScoreViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class ScoreViewHolder(val binding: RowBinding ) : RecyclerView.ViewHolder(binding.root)
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScoreViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.row, parent, false)
-        return ScoreViewHolder(view)
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val binding = RowBinding.inflate(layoutInflater, parent, false)
+        return ScoreViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ScoreViewHolder, position: Int) {
-        holder.itemView.apply {
-            findViewById<TextView>(R.id.number).text = scores[position].number
-            findViewById<TextView>(R.id.score).text = scores[position].score
+        holder.binding.apply {
+            number.text = scores[position].number
+            score.text = scores[position].score
         }
     }
 
