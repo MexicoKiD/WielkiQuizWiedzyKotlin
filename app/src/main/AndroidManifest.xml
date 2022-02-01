@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WielkiQuizWiedzy">
 
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="preloaded_fonts"

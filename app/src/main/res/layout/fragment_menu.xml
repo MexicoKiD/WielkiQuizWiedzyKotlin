@@ -49,7 +49,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="32dp"
             android:background="@drawable/round_button"
-            android:text="@string/wyniki"
+            android:text="@string/score"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -62,7 +62,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="32dp"
             android:background="@drawable/round_button"
-            android:text="@string/informacje"
+            android:text="@string/info"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -75,7 +75,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="32dp"
             android:background="@drawable/round_button"
-            android:text="@string/wyj_cie"
+            android:text="@string/exit"
             android:textColor="@color/white"
             android:textSize="24sp" />
     </RelativeLayout>

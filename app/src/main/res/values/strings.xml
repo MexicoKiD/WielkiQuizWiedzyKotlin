@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">WielkiQuizWiedzy</string>
-    <string name="wielki_quiz_wiedzy">Wielki Quiz Wiedzy</string>
+    <string name="app_name_2">Wielki Quiz Wiedzy</string>
     <string name="icon">icon</string>
     <string name="start">Start</string>
-    <string name="wyniki">Wyniki</string>
-    <string name="informacje">Informacje</string>
-    <string name="wyj_cie">Wyjście</string>
+    <string name="score">Wyniki</string>
+    <string name="info">Informacje</string>
+    <string name="exit">Wyjście</string>
+    <string name="text1">Jak daleko sięga twoja wiedza ogólna?</string>
+    <string name="text2">Oto świetny sposób, aby się przekonać!</string>
+    <string name="text3">Odpowiedz na pytania, które zawiera ten quiz</string>
+    <string name="text4">i dowiedz się, ile naprawdę wiesz o świecie.</string>
+    <string name="author">Hubert Mościcki</string>
+    <string name="top_score">Top 10 wyników</string>
 </resources>
